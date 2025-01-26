@@ -1,0 +1,529 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.title {
+  font-family: cursive;
+}
+header {
+  background: transparent;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 11px 11px 11px;
+  flex-wrap: wrap;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(10, 6, 6);
+}
+
+.buttons button {
+  margin-left: 10px;
+  padding: 6px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+}
+.Sign-In,
+.Sign-Up {
+  background-color: #d9d4d4;
+  width: 90px;
+  cursor: pointer;
+}
+.Book-Now {
+  cursor: pointer;
+  background-color: #6b754d;
+  width: 100px;
+  color: white;
+}
+.hero {
+  background-color: rgb(131, 131, 160);
+  background: url(image.png) no-repeat center/cover;
+  height: 15rem;
+  color: white;
+  padding: 120px 10px;
+}
+.hero h1 {
+  max-width: 1400px;
+  text-align: center;
+  text-decoration: dotted;
+  font-size: 4rem;
+  margin: 0;
+  font-style: oblique;
+  color: rgb(235, 235, 243);
+  padding-bottom: 20px;
+
+  /* animation :
+     typing 2s steps(47),
+    cursor .4s step-end infinite alternate;
+    
+}
+@keyframes cursor {
+  50% {border-color: transparent;} */
+}
+
+.hero p {
+  text-align: center;
+  font-size: 2rem;
+  font-style: oblique;
+  color: rgb(238, 242, 245);
+}
+
+.booking {
+  background: rgb(2, 2, 12);
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  box-shadow: 8px 8px 8px 8px rgba(18, 13, 13, 0.1);
+}
+
+.booking form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.booking form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking form label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: white;
+}
+.booking form input,
+.booking form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking button {
+  background-color: #a2a6aa;
+  color: white;
+  border: none;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.booking button:hover {
+  background-color: #13171c;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.about {
+  background-color: rgb(30, 30, 61);
+  padding: 40px;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.about-text {
+  width: 50%;
+}
+.about-text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(244, 239, 239);
+  font-family: italic;
+}
+.about-text p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgb(241, 234, 248);
+}
+.signature {
+  display: inline-block;
+  font-style: oblique;
+  margin-top: 20px;
+  font-family: Dancing Script, cursive;
+  font-size: 1.4rem;
+  padding-bottom: 5px;
+  color: rgb(107, 217, 18);
+}
+.about-images {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0px;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+.about-images img {
+  object-fit: cover;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 14px 15px 0px rgb(10, 6, 6);
+}
+.first {
+  top: 0;
+  left: 100px;
+
+  width: 300px;
+  height: 300px;
+
+  z-index: 2;
+}
+.last {
+  top: 40px;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+.rooms {
+  background-color: rgb(131, 131, 160);
+  text-align: center;
+  padding: 40px 25px;
+  color: white;
+}
+.rooms h2 {
+  font-style: italic;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.room-container {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.room-card {
+  width: 500px;
+  background-color: #bfd2f5;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 8px 8px 8px rgb(0, 2, 0);
+  align-items: center;
+  justify-content: center;
+}
+.room-card img {
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 6px 7px 8px rgb(0, 2, 0);
+  margin-bottom: 10px;
+}
+.room-info {
+  padding: 10px;
+  text-align: center;
+}
+.room-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.room-info p {
+  font-size: 1.3rem;
+  color: rgb(55, 19, 88);
+}
+.services {
+  padding: 40px 20px;
+  background-color: rgb(30, 30, 61);
+  text-align: center;
+}
+.services-content {
+  margin-bottom: 20px;
+}
+.services-content h2 {
+  font-size: 2.2rem;
+  font-style: italic;
+  color: #ffffff;
+}
+.services-content p {
+  color: white;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+.services-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.services-images img {
+  width: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 6px 8px 7px 4px #13171c;
+}
+.hotel-facilities {
+  background-color: rgb(131, 131, 160);
+  color: white;
+  padding: auto;
+}
+.hotel-facilities .facilities-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.hotel-facilities h2 {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: 2.3rem;
+  font-style: italic;
+}
+.hotel-facilities .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.hotel-facilities .facilities {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.hotel-facilities .facility {
+  font-family: Arial, sans-serif;
+  background: #0f2f72;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+.hotel-facilities .facility .icon {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.hotel-facilities .facility h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.hotel-facilities.facility p {
+  font-size: 1rem;
+}
+.hotel-facilities .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hotel-facilities .image img {
+  max-width: 450px;
+  width: 420px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 0 14px 15px 12px black;
+}
+.reviews {
+  background-color: rgb(30, 30, 61);
+  color: white;
+}
+.reviews h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  font-style: italic;
+  padding-top: 30px;
+}
+.reviews h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+}
+.reviews .review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.review-container .review {
+  width: 290px;
+  background: black;
+  border-radius: 12px;
+  box-shadow: 0 12px 13px;
+  padding: 20px;
+}
+.review .sayings {
+  font-size: 1.2rem;
+  text-align: center;
+  text-overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.review .person {
+  text-align: center;
+  font-style: oblique;
+  margin-top: 15px;
+  font-family: Dancing Script, cursive;
+  font-size: 1.4rem;
+  color: rgb(107, 217, 18);
+}
+.footer{
+color: white;
+  background-color: rgb(131, 131, 160);
+}
+.footer .newsletter{
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+.newsletter h3 {
+  font-style: italic;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+.footer .newsletter form{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.footer .newsletter input{
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  width: 150px;
+  text-align: center;
+}
+.footer .newsletter button{
+  font-weight:bold;
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff9900;
+  color: white;
+  cursor: pointer;
+}
+.footer .footer-content
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-top: 1px solid black;
+}
+.footer .footer-content .column{
+  width: 30%;
+}
+.footer .footer-content h4{
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+.footer .footer-content ul{
+  list-style: none;
+}
+.footer .footer-content ul li {
+
+padding: 10px;
+}
+.footer .footer-content ul li a{
+  text-decoration: none;
+  color: #d4e0f5;
+}
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+  .booking form {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .room-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+
+  .services-images {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  
+  .facilities-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .facility {
+    margin-bottom: 20px;
+  }
+
+  
+  .review-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
